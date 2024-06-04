@@ -1,16 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista de Plantações</title>
-</head>
-<body>
-    <h1>Lista de Plantações</h1>
-    <ul>
-        {% for plantacao in plantacoes %}
-            <li><a href="/plantacoes/{{ plantacao.id }}">{{ plantacao.nome }}</a></li>
-        {% endfor %}
-    </ul>
-</body>
-</html>
+from flask import Flask, render_template, request
+
+app = Flask(__name__)
+
+# Dados simulados de plantações
+plantacoes = [
+    {"id": 1, "nome": "Milho", "area": 100, "colheita": "30/06/2024"},
+    {"id": 2, "nome": "Trigo", "area": 80, "colheita": "15/07/2024"},
+    {"id": 3, "nome": "Arroz", "area": 120, "colheita": "20/07/2024"}
+]
+
+@app.route("/")
+def index():
+    return render_template("index.html", plantacoes=plantacoes)
+
+@app.route("/plantacoes/<int:plantacao_id>")
+def plantacao(plantacao_id):
+    for plantacao in plantacoes:
+        if plantacao["id"] == plantacao_id:
+            return render_template("plantacao.html", plantacao=plantacao)
+    return "Plantação não encontrada."
+
+if __name__ == "__main__":
+    app.run(debug=True)
+
