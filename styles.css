@@ -1,0 +1,26 @@
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+html[Attributes Style] {
+    -webkit-locale: "pt-br";
+    direction: ltr;
+}
+user agent stylesheet
+[dir="ltr" i] {
+    unicode-bidi: isolate;
+}
+user agent stylesheet
+:root {
+    view-transition-name: root;
+}
+user agent stylesheet
+html {
+    display: block;
+}
