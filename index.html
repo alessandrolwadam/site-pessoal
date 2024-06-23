@@ -16,4 +16,54 @@
         </ul>
     </div>
 
+    <div class="content">
+        <section id="Motos">
+                <h2>Motos</h2>
+            </section>
     
+           
+    
+    
+            <div class="item active">
+                <div class="car-img">
+                    <img src="1.webp" alt="imagem moto">
+            </div>
+                <div class="content">
+                    <P class="informaçoes">
+                        <span></span>
+                        MARCA
+                    </P>
+                    <h2>
+                    Honda
+                    </h2>
+                    <p class="descrição">
+                        CG 160 Start
+                    </p>
+                    <button class="informação" onclick="mostrarInformacoes()">
+                        Saiba Mais
+                    </button>
+                    
+                    <div id="informacoesAdicionais" style="display: none;">
+                        <!-- Aqui você pode colocar o texto ou conteúdo que deseja mostrar -->
+                        <!-- Por exemplo: -->
+                        <p>Aqui estão mais informações...</p>
+                    </div>
+                    
+                    <script>
+                        function mostrarInformacoes() {
+                            var informacoesDiv = document.getElementById('informacoesAdicionais');
+                            if (informacoesDiv.style.display === 'none') {
+                                informacoesDiv.style.display = 'block';
+                            } else {
+                                informacoesDiv.style.display = 'none';
+                            }
+                        }
+                    </script>
+                    
+                </div>
+    
+               
+            
+        
+    </body>
+    </html>
