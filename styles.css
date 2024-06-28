@@ -43,7 +43,11 @@ body, html {
 }
 
 .content {
+<<<<<<< HEAD
+    margin-left: 250px; /* Ajuste conforme a largura da sidebar */
+=======
     margin-left: 200px; /* Ajuste conforme a largura da sidebar */
+>>>>>>> e83b705f22bb558b7a127c61dd5497294e4874cc
     padding: 30px;
 }
 
