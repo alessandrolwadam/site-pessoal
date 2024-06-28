@@ -43,8 +43,8 @@ body, html {
 }
 
 .content {
-    margin-left: 400px; /* Ajuste conforme a largura da sidebar */
-    padding: 40px;
+    margin-left: 100px; /* Ajuste conforme a largura da sidebar */
+    padding: 20px;
 }
 
 /* Estilos para as seções */
