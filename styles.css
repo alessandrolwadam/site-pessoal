@@ -56,3 +56,30 @@ body, html {
 .content section:last-child {
     border-bottom: none;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+.content {
+    margin-left: 400px; /* Ajuste conforme a largura da sidebar */
+    padding: 30px;
+}
+
+/* Estilos para as seções */
+.content section {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #a3a3a3;
+}
+
+.content section:last-child {
+    border-bottom: none;
+}
